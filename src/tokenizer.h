@@ -1,6 +1,19 @@
 #ifndef _TOKENIZER_
 #define _TOKENIZER_
 
+/*first implementation of a ui for tokenizer
+  using a normal array to hold a string, and then print it back at the user*/
+#include <studio.h>
+
+int main(void)
+{
+  char inStr[20];
+  printf("Please input string, max 20 characters:\n");
+  printf(">_");
+  fgets(inStr,20,stdin);
+  print("Input string: %s", inStr);
+  return 0;
+}
 
 /* Return true (non-zero) if c is a whitespace characer
    ('\t' or ' ').  
